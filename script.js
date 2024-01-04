@@ -5,3 +5,7 @@ function Page() {
         </div>
     )
 }
+
+const root = document.querySelector("#root")
+
+ReactDOM.render(<Page />, root)
