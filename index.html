@@ -313,12 +313,20 @@
 
         // Initialize scroll animations on DOM content loaded
         document.addEventListener('DOMContentLoaded', () => {
-            // FIX: Immediately reset scroll position to the top to prevent browser history restore issues.
-            // This ensures the page always starts at the top, allowing the animations to trigger correctly.
+            // FIX 1: Overcome browser anchor scrolling on refresh
+            // If there's a hash in the URL (e.g., #projects), remove it immediately on load
+            // This prevents the browser from automatically jumping to that section.
+            if (window.location.hash) {
+                // Use replaceState to change the URL without adding an entry to the browser history
+                history.replaceState(null, null, window.location.pathname + window.location.search);
+            }
+
+            // FIX 2: Ensure the scroll position is manually reset to the top
+            // This prevents browser session restoration from scrolling the page down.
             if (history.scrollRestoration) {
                 history.scrollRestoration = 'manual';
             }
-            window.scrollTo(0, 0); 
+            window.scrollTo(0, 0);
 
             setupScrollAnimations();
             setupMobileMenu();
