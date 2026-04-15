@@ -1,4 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+
+# 🛠️ Under Maintenance
+
+### [ashkjha1.github.io](https://ashkjha1.github.io)
+
+**Status:** Currently undergoing a major update.
+
+---
+
+I'm currently working on building a new experience. 
+The repository and the site are being updated with a fresh stack and design.
+
+Stay tuned—something cool is coming soon.
+
+![GitHub Pages Deployment](https://img.shields.io/badge/Status-In%20Progress-blue?style=for-the-badge&logo=github)
+
+</div>
 
 ## Getting Started
 
