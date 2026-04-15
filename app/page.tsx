@@ -1,19 +1,3 @@
-// export default function Page() {
-//   return (
-//     <div style={{ 
-//       display: 'flex', 
-//       flexDirection: 'column',
-//       justifyContent: 'center', 
-//       alignItems: 'center', 
-//       height: '100vh', 
-//       fontFamily: 'system-ui, sans-serif' 
-//     }}>
-//       <h1>Under Maintenance</h1>
-//       <p>I'm building something cool. Check back soon!</p>
-//     </div>
-//   )
-// }
-
 export default function MaintenancePage() {
   return (
     <div style={{
